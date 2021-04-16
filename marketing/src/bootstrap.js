@@ -27,15 +27,18 @@ const mount = (root, { onNavigate, defaultHistory, initialPath }) => {
     }
 }
 
+const devRoot = document.querySelector('#_marketing-dev-root')
+mount(devRoot, { defaultHistory: createBrowserHistory() })
+
 //If we are in development and in isolation,
 //call mount immediately
-if (process.env.NODE_ENV === 'development') {
-    const devRoot = document.querySelector('#_marketing-dev-root')
+// if (process.env.NODE_ENV === 'development') {
 
-    if (devRoot) {
-        mount(devRoot, { defaultHistory: createBrowserHistory() })
-    }
-}
+
+//     if (devRoot) {
+
+//     }
+// }
 
 //We are runnin through container 
 //and we should export the mount function
