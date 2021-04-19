@@ -15,10 +15,10 @@ export default function App({ history, onSignIn }) {
             <StylesProvider generateClassName={generateClassName}>
                 <Router history={history}>
                     <Switch>
-                        <Route path="/auth/signin/">
+                        <Route path="/authentication/signin/">
                             <Signin onSignIn={onSignIn} />
                         </Route>
-                        <Route path="/auth/signup/">
+                        <Route path="/authentication/signup/">
                             <Signup onSignIn={onSignIn} />
                         </Route>
                     </Switch>

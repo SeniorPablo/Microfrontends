@@ -37,6 +37,6 @@ mount(devRoot, { defaultHistory: createBrowserHistory() })
 //     }
 // }
 
-//We are runnin through container 
+//We are runnin through container
 //and we should export the mount function
 export { mount }
